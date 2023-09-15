@@ -8,12 +8,8 @@
   margin-top -5px;
 }
 
-#app > img {
-  width: 64px;
-}
-
 #app > h2 {
-  margin-top: 104px;
+  margin-top: 64px;
   align-self: flex-start;
 }
 
@@ -21,6 +17,7 @@
   align-self: flex-start;
   text-align: justify;
   width: 512px;
+  margin-top: -5px
 }
 
 #app .placeholder{

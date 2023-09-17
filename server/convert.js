@@ -32,4 +32,5 @@ export const convert = () =>
         console.log("Error ao Converter o vídeo", error)
         reject(error)
       })
+      .save(outputPath)
   })

@@ -1,8 +1,12 @@
 import { pipeline } from "@xenova/transformers"
 
+import { transcriptionExample } from "./utils/transcription.js"
+
 export async function transcribe(audio) {
   try {
-    console.log("Realizando a transcrição...")
+    // return transcriptionExample
+
+    console.log("Realizando a transicrição...")
 
     const transcribe = await pipeline(
       "automatic-speech-recognition",
@@ -16,9 +20,8 @@ export async function transcribe(audio) {
       task: "transcribe",
     })
 
-    console.log("Transcrição finalizada.")
+    console.log("Transcrição finalizada com sucesso.")
     return transcription?.text.replace("[Música]", "")
-
   } catch (error) {
     throw new Error(error)
   }
